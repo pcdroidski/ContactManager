@@ -80,11 +80,16 @@ public class ContactsAdapter extends DragSortCursorAdapter {
         String contactLastName = cursor.getString(cursor.getColumnIndex(ContactsContent.Contact.KEY_LAST_NAME));
         String contactEmail = cursor.getString(cursor.getColumnIndex(ContactsContent.Contact.KEY_EMAIL));
         String contactPhotoUrl = cursor.getString(cursor.getColumnIndex(ContactsContent.Contact.KEY_PHOTO_URL));
+        boolean activeGeofence = cursor.getInt(cursor.getColumnIndex(ContactsContent.Contact.KEY_ACTIVE_GEOFENCE)) == 1;
 
         // Set data obtained
         holder.fullNameHolder.setText(contactFirstName + " " + contactLastName);
         holder.emailHolder.setText(contactEmail);
         holder.photoHolder.setImageBitmap(fetchImage(contactPhotoUrl));
+
+        if (activeGeofence){
+            view.setBackgroundColor(mContext.getResources().getColor(android.R.color.holo_green_light));
+        }
     }
 
     private Bitmap decodeUri(Uri uri) {

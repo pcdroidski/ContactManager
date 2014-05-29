@@ -36,7 +36,12 @@ public class DbHelper extends SQLiteOpenHelper {
                     ContactsContent.Contact.KEY_ADDRESS + " String," +
                     ContactsContent.Contact.KEY_PHOTO_URL + " String," +
                     ContactsContent.Contact.KEY_ADDRESS_LAT + " DOUBLE," +
-                    ContactsContent.Contact.KEY_ADDRESS_LON + " DOUBLE" +
+                    ContactsContent.Contact.KEY_ADDRESS_LON + " DOUBLE," +
+                    ContactsContent.Contact.KEY_RADIUS + " FLOAT," +
+                    ContactsContent.Contact.KEY_EXPIRATION_DURATION + " LONG," +
+                    ContactsContent.Contact.KEY_TRANSITION_TYPE + " INTEGER," +
+                    ContactsContent.Contact.KEY_ENABLED_GEOFENCE + " INTEGER," +
+                    ContactsContent.Contact.KEY_ACTIVE_GEOFENCE + " INTEGER" +
                     ")";
 
     @Override

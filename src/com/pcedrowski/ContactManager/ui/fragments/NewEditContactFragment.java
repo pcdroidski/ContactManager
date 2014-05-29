@@ -1,9 +1,9 @@
 package com.pcedrowski.ContactManager.ui.fragments;
 
 import android.app.*;
-import android.content.*;
-import android.database.Cursor;
-import android.database.SQLException;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.location.Address;
@@ -18,9 +18,9 @@ import android.view.*;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
-import com.pcedrowski.ContactManager.Contact;
 import com.pcedrowski.ContactManager.R;
-import com.pcedrowski.ContactManager.provider.ContactsContent;
+import com.pcedrowski.ContactManager.models.Contact;
+import com.pcedrowski.ContactManager.provider.ContactsManager;
 
 import java.io.FileDescriptor;
 import java.io.IOException;
@@ -29,6 +29,8 @@ import java.util.Locale;
 
 public class NewEditContactFragment extends Fragment {
     private Context mContext;
+    private ContactsManager contactsManager;
+
     private Contact contact;
     private EditText firstNameField;
     private EditText lastNameField;
@@ -46,6 +48,7 @@ public class NewEditContactFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = getActivity();
+        contactsManager = ContactsManager.getInstance();
 
         setHasOptionsMenu(true);
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
@@ -53,7 +56,7 @@ public class NewEditContactFragment extends Fragment {
         Bundle args = getArguments();
         if (args != null) {
             long contactId = args.getLong("contact_id");
-            contact = new Contact(getItemRecord(contactId));
+            contact = new Contact(contactsManager.getContact(contactId));
             getActivity().getActionBar().setTitle("Edit Contact");
         } else {
             getActivity().getActionBar().setTitle("New Contact");
@@ -149,21 +152,11 @@ public class NewEditContactFragment extends Fragment {
         } else if (address != null && !address.isEmpty() && addressLatitude == 0 && addressLongitude == 0) {
             Toast.makeText(mContext, "Unable to find a location for the address specified.", Toast.LENGTH_SHORT).show();
         } else {
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(ContactsContent.Contact.KEY_FIRST_NAME, firstName);
-            contentValues.put(ContactsContent.Contact.KEY_LAST_NAME, lastName);
-            contentValues.put(ContactsContent.Contact.KEY_EMAIL, email);
-            contentValues.put(ContactsContent.Contact.KEY_ADDRESS, address);
-            contentValues.put(ContactsContent.Contact.KEY_PHOTO_URL, photoPath);
-            contentValues.put(ContactsContent.Contact.KEY_ADDRESS_LAT, addressLatitude);
-            contentValues.put(ContactsContent.Contact.KEY_ADDRESS_LON, addressLongitude);
-
-            ContentResolver cr = getActivity().getContentResolver();
             if (contact == null) {
-                cr.insert(ContactsContent.Contact.CONTENT_URI, contentValues);
+                contactsManager.addContact(firstName, lastName, email, address, photoPath, addressLatitude, addressLongitude);
                 Toast.makeText(mContext, "Contact created successfully!", Toast.LENGTH_SHORT).show();
             } else {
-                cr.update(ContactsContent.Contact.CONTENT_URI, contentValues, ContactsContent.Contact.KEY_ID + "=" + contact.getContactId(), null);
+                contactsManager.updateContact(contact.getContactId(), firstName, lastName, email, address, photoPath, addressLatitude, addressLongitude, 1);
                 Toast.makeText(mContext, "Contact updated successfully!", Toast.LENGTH_SHORT).show();
                 Intent data = new Intent();
                 data.putExtra("contact_id", contact.getContactId());
@@ -292,21 +285,6 @@ public class NewEditContactFragment extends Fragment {
             }
             storeContent(orgAddress);
         }
-    }
-
-    /** Editing contact info */
-    private Cursor getItemRecord(long rowId) throws SQLException {
-        ContentResolver cr = getActivity().getContentResolver();
-        Cursor c = cr.query(ContactsContent.Contact.CONTENT_URI, new String[] {ContactsContent.Contact.KEY_ID, ContactsContent.Contact.KEY_POSITION,
-                        ContactsContent.Contact.KEY_FIRST_NAME, ContactsContent.Contact.KEY_LAST_NAME, ContactsContent.Contact.KEY_EMAIL,
-                        ContactsContent.Contact.KEY_PHOTO_URL, ContactsContent.Contact.KEY_ADDRESS,
-                        ContactsContent.Contact.KEY_ADDRESS_LON, ContactsContent.Contact.KEY_ADDRESS_LAT},
-                ContactsContent.Contact.KEY_ID + "=" + rowId, null, null);
-
-        if (c != null) {
-            c.moveToFirst();
-        }
-        return c;
     }
 
     public class RemovePhotoDialog extends DialogFragment {

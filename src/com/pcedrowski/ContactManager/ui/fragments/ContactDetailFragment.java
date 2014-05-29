@@ -2,11 +2,8 @@ package com.pcedrowski.ContactManager.ui.fragments;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.SQLException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -20,9 +17,9 @@ import com.google.android.gms.maps.*;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.pcedrowski.ContactManager.Contact;
 import com.pcedrowski.ContactManager.R;
-import com.pcedrowski.ContactManager.provider.ContactsContent;
+import com.pcedrowski.ContactManager.models.Contact;
+import com.pcedrowski.ContactManager.provider.ContactsManager;
 import com.pcedrowski.ContactManager.ui.activities.ContactActivity;
 
 import java.io.FileDescriptor;
@@ -32,6 +29,7 @@ import java.io.IOException;
 public class ContactDetailFragment extends Fragment {
     private Context mContext;
     private Contact contact;
+    private ContactsManager contactsManager;
 
     private TextView fullNameField;
     private TextView emailField;
@@ -47,13 +45,14 @@ public class ContactDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = getActivity();
+        contactsManager = ContactsManager.getInstance();
         setRetainInstance(true);
         setHasOptionsMenu(true);
 
         /** Get contact info */
         Bundle args = getArguments();
         long contactId = args.getLong("contact_id");
-        contact = new Contact(getItemRecord(contactId));
+        contact = new Contact(contactsManager.getContact(contactId));
 
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
         getActivity().getActionBar().setTitle(contact.getFullName());
@@ -133,7 +132,7 @@ public class ContactDetailFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == EDIT_CONTACT && resultCode == Activity.RESULT_OK) {
             long cId = data.getLongExtra("contact_id", -1);
-            contact = new Contact(getItemRecord(cId));
+            contact = new Contact(contactsManager.getContact(cId));
             fillViews();
         }
     }
@@ -160,20 +159,6 @@ public class ContactDetailFragment extends Fragment {
             mapView.setVisibility(View.GONE);
         }
 
-    }
-
-    private Cursor getItemRecord(long rowId) throws SQLException {
-        ContentResolver cr = getActivity().getContentResolver();
-        Cursor c = cr.query(ContactsContent.Contact.CONTENT_URI, new String[] {ContactsContent.Contact.KEY_ID, ContactsContent.Contact.KEY_POSITION,
-                    ContactsContent.Contact.KEY_FIRST_NAME, ContactsContent.Contact.KEY_LAST_NAME, ContactsContent.Contact.KEY_EMAIL,
-                        ContactsContent.Contact.KEY_PHOTO_URL, ContactsContent.Contact.KEY_ADDRESS,
-                        ContactsContent.Contact.KEY_ADDRESS_LON, ContactsContent.Contact.KEY_ADDRESS_LAT},
-                ContactsContent.Contact.KEY_ID + "=" + rowId, null, null);
-
-        if (c != null) {
-            c.moveToFirst();
-        }
-        return c;
     }
 
     public void decodeUri(Uri uri) {

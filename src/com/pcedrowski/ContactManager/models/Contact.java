@@ -1,4 +1,4 @@
-package com.pcedrowski.ContactManager;
+package com.pcedrowski.ContactManager.models;
 
 import android.database.Cursor;
 import com.pcedrowski.ContactManager.provider.ContactsContent;
@@ -16,6 +16,7 @@ public class Contact {
     private String address;
     private double address_latitude;
     private double address_longitude;
+    private boolean geofenceEnabled;
 
 
     public Contact(){
@@ -31,6 +32,7 @@ public class Contact {
         photoUrl = cursor.getString(cursor.getColumnIndex(ContactsContent.Contact.KEY_PHOTO_URL));
         address_latitude = cursor.getDouble(cursor.getColumnIndex(ContactsContent.Contact.KEY_ADDRESS_LAT));
         address_longitude = cursor.getDouble(cursor.getColumnIndex(ContactsContent.Contact.KEY_ADDRESS_LON));
+        geofenceEnabled = cursor.getInt(cursor.getColumnIndex(ContactsContent.Contact.KEY_ENABLED_GEOFENCE)) == 1;
     }
 
     /** Getters and Setters */
@@ -87,6 +89,10 @@ public class Contact {
     /** Custom methods */
     public String getFullName(){
         return String.format("%s %s", firstName, lastName);
+    }
+
+    public boolean isGeofenceEnabled(){
+        return geofenceEnabled;
     }
 
 }

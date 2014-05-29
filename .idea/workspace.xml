@@ -75,82 +75,171 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="ContactManager" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-              <caret line="53" column="118" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactViewHolder.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactViewHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactDetailFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactDetailFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1867" max-vertical-offset="3510">
-              <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContactsAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1522" max-vertical-offset="2580">
-              <caret line="155" column="56" selection-start-line="154" selection-start-column="24" selection-end-line="155" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5338#5339#0" expanded="true" />
-                <element signature="e#5378#5379#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NewEditContactFragment.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.7790697" vertical-offset="0" max-vertical-offset="4680">
-              <caret line="288" column="98" selection-start-line="288" selection-start-column="53" selection-end-line="288" selection-end-column="53" />
-              <folding>
-                <element signature="e#2898#3138#0" expanded="true" />
-                <element signature="e#3127#3128#0" expanded="true" />
-                <element signature="e#12304#12333#0" expanded="true" />
-                <element signature="e#12374#12389#0" expanded="true" />
-                <element signature="e#12391#12881#0" expanded="true" />
-                <element signature="e#12858#12859#0" expanded="true" />
-                <element signature="e#12922#12937#0" expanded="true" />
-                <element signature="e#12939#13143#0" expanded="true" />
-                <element signature="e#13120#13121#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="SeparatedListAdapter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/SeparatedListAdapter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1740">
+                  <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#506#522#0" expanded="true" />
+                    <element signature="e#676#677#0" expanded="true" />
+                    <element signature="e#757#758#0" expanded="true" />
+                    <element signature="e#2532#2533#0" expanded="true" />
+                    <element signature="e#2560#2561#0" expanded="true" />
+                    <element signature="e#2606#2607#0" expanded="true" />
+                    <element signature="e#2679#2680#0" expanded="true" />
+                    <element signature="e#3384#3385#0" expanded="true" />
+                    <element signature="e#3415#3416#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LocationService.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/services/LocationService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1770">
+                  <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ContactsManager.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="1890">
+                  <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#3113#3122#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GeofenceManager.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/GeofenceManager.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.5596869" vertical-offset="298" max-vertical-offset="1320">
+                  <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SimpleGeofence.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/models/SimpleGeofence.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1260">
+                  <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ContactsProvider.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="2370">
+                  <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/MainActivity.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.3816047" vertical-offset="0" max-vertical-offset="2835">
+                  <caret line="45" column="52" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ContactListFragment.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactListFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2835">
+                  <caret line="36" column="67" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="contact_list_fragment.xml" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/res/layout/contact_list_fragment.xml">
+              <provider editor-type-id="android-designer">
+                <state />
+              </provider>
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="615">
+                  <caret line="27" column="4" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="4" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ContactsAdapter.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactsAdapter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1129" max-vertical-offset="2625">
+                  <caret line="89" column="41" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ReceiveTransitionsService.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/services/ReceiveTransitionsService.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="2115">
+                  <caret line="65" column="68" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="NewEditContactFragment.java" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0" vertical-offset="1714" max-vertical-offset="4215">
+                  <caret line="158" column="154" selection-start-line="158" selection-start-column="154" selection-end-line="158" selection-end-column="154" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -172,18 +261,13 @@
         <option value="$PROJECT_DIR$/res/menu/main_menu.xml" />
         <option value="$PROJECT_DIR$/res/menu/new_contact_menu.xml" />
         <option value="$PROJECT_DIR$/libs/drag-sort-listview/library/src/com/mobeta/android/dslv/SimpleDragSortCursorAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java" />
         <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/DynamicListView.java" />
         <option value="$PROJECT_DIR$/res/menu/contact_menu.xml" />
         <option value="$PROJECT_DIR$/res/anim/slide_in_left.xml" />
         <option value="$PROJECT_DIR$/res/anim/slide_in_right.xml" />
         <option value="$PROJECT_DIR$/res/anim/slide_out_left.xml" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/MainActivity.java" />
         <option value="$PROJECT_DIR$/res/anim/slide_out_right.xml" />
-        <option value="$PROJECT_DIR$/res/layout/contact_list_fragment.xml" />
         <option value="$PROJECT_DIR$/res/layout/contact_list_item.xml" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsContent.java" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/DbHelper.java" />
         <option value="$PROJECT_DIR$/res/layout-land/new_contact_fragment.xml" />
         <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewContactFragment.java" />
         <option value="$PROJECT_DIR$/libs/drag-sort-listview/library/src/com/mobeta/android/dslv/DragSortItemView.java" />
@@ -191,15 +275,31 @@
         <option value="$PROJECT_DIR$/res/layout/contact_details_fragment.xml" />
         <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/Contact.java" />
         <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/ContactActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactListFragment.java" />
         <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactViewHolder.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/libs/drag-sort-listview/library/src/com/mobeta/android/dslv/DragSortCursorAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactDetailFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactsAdapter.java" />
         <option value="$PROJECT_DIR$/res/layout/new_contact_fragment.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactManager.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ContactManager.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactDetailFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/GeofenceManager.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/models/Contact.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/SeparatedListAdapter.java" />
+        <option value="$PROJECT_DIR$/res/layout/contact_list_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/layout/list_header.xml" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsContent.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/DbHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/models/SimpleGeofence.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactsAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/GeofenceManager.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsManager.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/services/LocationService.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/services/ReceiveTransitionsService.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactListFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/MainActivity.java" />
       </list>
     </option>
   </component>
@@ -243,6 +343,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,6 +428,10 @@
               <option name="myItemId" value="ui" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -337,14 +443,86 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="provider" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactManager" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -364,9 +542,14 @@
     <property name="ExportedModule" value="ContactManager" />
     <property name="ExportedApkPath" value="$PROJECT_DIR$/ContactManager.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pcedrowski.ContactManager.provider" />
+      <recent name="com.pcedrowski.ContactManager" />
       <recent name="com.pcedrowski.ContactManager.ui.fragments" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -378,12 +561,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Android Application.ContactManager">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
       <module name="" />
       <setting name="vmparams" value="" />
@@ -392,6 +569,12 @@
       <setting name="passParentEnv" value="true" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -403,19 +586,6 @@
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -444,6 +614,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -637,12 +820,17 @@
       <updated>1399863392455</updated>
       <workItem from="1399863396423" duration="41510000" />
       <workItem from="1400195952646" duration="24160000" />
-      <workItem from="1400270698565" duration="5222000" />
+      <workItem from="1400270698565" duration="5497000" />
+      <workItem from="1400515102501" duration="485000" />
+      <workItem from="1400983740800" duration="71000" />
+      <workItem from="1400983822715" duration="953000" />
+      <workItem from="1401211872387" duration="23000" />
+      <workItem from="1401229892945" duration="25856000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70892000" />
+    <option name="totallyTimeSpent" value="98555000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1916" height="1178" extended-state="6" />
@@ -670,7 +858,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2497332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16808964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296501" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -706,31 +894,31 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java</url>
-          <line>129</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java</url>
-          <line>83</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java</url>
-          <line>93</line>
+          <line>94</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java</url>
-          <line>178</line>
+          <line>171</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java</url>
-          <line>195</line>
+          <line>188</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -743,139 +931,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/anim/slide_out_right.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15595463" vertical-offset="0" max-vertical-offset="1058">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/contact_list_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21823472" vertical-offset="0" max-vertical-offset="1031">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/contact_list_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17458779" vertical-offset="0" max-vertical-offset="1031">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21428572" vertical-offset="0" max-vertical-offset="700">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ContactManager.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42097488" vertical-offset="0" max-vertical-offset="677">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42097488" vertical-offset="0" max-vertical-offset="677">
-          <caret line="19" column="31" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proguard-project.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42857143" vertical-offset="0" max-vertical-offset="700">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/location/Location.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="5671" max-vertical-offset="13380">
-          <caret line="427" column="58" selection-start-line="427" selection-start-column="54" selection-end-line="427" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="6923" max-vertical-offset="9360">
-          <caret line="533" column="53" selection-start-line="533" selection-start-column="53" selection-end-line="533" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsContent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32608697" vertical-offset="0" max-vertical-offset="1058">
-          <caret line="24" column="76" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/location/Geocoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="1778" max-vertical-offset="3600">
-          <caret line="168" column="25" selection-start-line="168" selection-start-column="25" selection-end-line="168" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/database/sqlite/SQLiteDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="18797" max-vertical-offset="31830">
-          <caret line="1336" column="52" selection-start-line="1336" selection-start-column="52" selection-end-line="1336" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/DbHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14933838" vertical-offset="367" max-vertical-offset="1680">
-          <caret line="37" column="71" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36672968" vertical-offset="1082" max-vertical-offset="2340">
-          <caret line="100" column="22" selection-start-line="100" selection-start-column="18" selection-end-line="100" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/maps/GoogleMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="2640">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/android/add-ons/addon-google_apis-google-19-1/libs/maps.jar!/com/google/android/maps/MapView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07088847" vertical-offset="0" max-vertical-offset="2190">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/android/sources/android-19/android/content/Intent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33206832" vertical-offset="55790" max-vertical-offset="107490">
@@ -894,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.056710776" vertical-offset="195" max-vertical-offset="32235">
           <caret line="49" column="22" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -909,17 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.32738096" vertical-offset="0" max-vertical-offset="1350">
           <caret line="22" column="66" selection-start-line="22" selection-start-column="51" selection-end-line="22" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/app/LoaderManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="1748" max-vertical-offset="13050">
-          <caret line="162" column="34" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -941,9 +984,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2753623" vertical-offset="0" max-vertical-offset="1815">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,9 +991,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5236295" vertical-offset="1" max-vertical-offset="6060">
           <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,34 +1012,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16" vertical-offset="130" max-vertical-offset="1425">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="87" selection-end-column="19" />
-          <folding>
-            <element signature="e#1659#1673#0" expanded="false" />
-            <element signature="e#1860#1885#0" expanded="false" />
-            <element signature="e#2330#2345#0" expanded="false" />
-            <element signature="e#2529#2549#0" expanded="false" />
-            <element signature="e#2907#2929#0" expanded="false" />
-            <element signature="e#3082#3102#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/content/ContentResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="18383" max-vertical-offset="34080">
-          <caret line="1307" column="21" selection-start-line="1307" selection-start-column="21" selection-end-line="1307" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2410208" vertical-offset="0" max-vertical-offset="1058">
-          <caret line="17" column="75" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,7 +1019,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327032" vertical-offset="13943" max-vertical-offset="26580">
           <caret line="1061" column="16" selection-start-line="1061" selection-start-column="16" selection-end-line="1061" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,7 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3327032" vertical-offset="57773" max-vertical-offset="78660">
           <caret line="4059" column="22" selection-start-line="4059" selection-start-column="22" selection-end-line="4059" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1026,225 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.8572779" vertical-offset="3067" max-vertical-offset="8835">
           <caret line="1689" column="30" selection-start-line="1689" selection-start-column="30" selection-end-line="1689" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatLoc#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatViewMid#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatViewOnMeasured#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mObserver#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatAlpha#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatPos#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFirstExpPos#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mSecondExpPos#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mAnimate#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mSrcPos#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragDeltaX#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragDeltaY#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mOffsetX#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mOffsetY#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDropListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mRemoveListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragEnabled#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#IDLE#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mItemHeightCollapsed#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatViewHeight#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatViewHeightHalf#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mWidthMeasureSpec#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mSampleViewTypes#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragScroller#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragUpScrollStartFrac#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragDownScrollStartFrac#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mUpScrollStartY#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragUpScrollHeight#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragDownScrollHeight#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mMaxScrollSpeed#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mScrollProfile#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mX#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mY#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mLastX#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mLastY#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragStartY#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#DRAG_POS_X#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#DRAG_NEG_X#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#DRAG_POS_Y#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#DRAG_NEG_Y#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragFlags#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mLastCallWasIntercept#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mInTouchEvent#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mFloatViewManager#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mCancelEvent#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#NO_CANCEL#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mCancelMethod#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mSlideRegionFrac#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mSlideFrac#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mAdapterWrapper#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mTrackDragSort#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mDragSortTracker#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mBlockLayoutRequests#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#mIgnoreTouchEvent#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;field#sCacheSize#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#DragSortListView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#16705:17088" expanded="false" />
-            <element signature="method#cancel#0;class#16705:17088" expanded="false" />
-            <element signature="docComment;method#setFloatAlpha#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#setMaxScrollSpeed#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#setAdapter#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#setAdapter#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#getInputAdapter#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#getInputAdapter#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#AdapterWrapper#0;class#AdapterWrapper#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#19537:19787" expanded="false" />
-            <element signature="e#21142#21160#0" expanded="false" />
-            <element signature="e#21523#21576#0" expanded="false" />
-            <element signature="e#22334#22389#0" expanded="false" />
-            <element signature="method#drawDivider#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#23560#23611#0" expanded="false" />
-            <element signature="method#getItemHeight#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#25710#25762#0" expanded="false" />
-            <element signature="method#printPosData#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#HeightCache#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#HeightCache#0;class#HeightCache#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#HeightCache#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#add#0;class#HeightCache#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#clear#0;class#HeightCache#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#getShuffleEdge#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#getShuffleEdge#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#28369#28423#0" expanded="false" />
-            <element signature="e#28869#28927#0" expanded="false" />
-            <element signature="method#updatePositions#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#31012#31045#0" expanded="false" />
-            <element signature="e#31685#31720#0" expanded="false" />
-            <element signature="e#32187#32224#0" expanded="false" />
-            <element signature="e#33651#33669#0" expanded="false" />
-            <element signature="e#34154#34172#0" expanded="false" />
-            <element signature="method#onDraw#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#SmoothAnimator#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#transform#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#start#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onStart#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onUpdate#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onStop#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#run#0;class#SmoothAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#LiftAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#LiftAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onStart#0;class#LiftAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onUpdate#0;class#LiftAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#DropAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#DropAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onStart#0;class#DropAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#getTargetY#0;class#DropAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onUpdate#0;class#DropAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#RemoveAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#RemoveAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onStart#0;class#RemoveAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onUpdate#0;class#RemoveAnimator#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#removeItem#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#removeItem#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#removeItem#1;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#moveItem#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#moveItem#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#cancelDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#cancelDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#clearPositions#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#dropFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#46868#46921#0" expanded="false" />
-            <element signature="docComment;method#doRemoveItem#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#doRemoveItem#1;class#DragSortListView#0" expanded="false" />
-            <element signature="e#47706#47759#0" expanded="false" />
-            <element signature="method#adjustOnReorder#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#48375#48411#0" expanded="false" />
-            <element signature="docComment;method#stopDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#stopDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#stopDragWithVelocity#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#stopDrag#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onTouchEvent#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#50785#50839#0" expanded="false" />
-            <element signature="method#doActionUpOrCancel#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#saveTouchCoords#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onInterceptTouchEvent#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#setDragScrollStart#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#setDragScrollStarts#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#setDragScrollStarts#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#continueDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#55685#55749#0" expanded="false" />
-            <element signature="e#56176#56236#0" expanded="false" />
-            <element signature="e#56688#56754#0" expanded="false" />
-            <element signature="method#updateScrollStarts#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onSizeChanged#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#adjustAllItems#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#adjustItem#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#adjustItem#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#adjustItem#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#getChildHeight#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#59806#59859#0" expanded="false" />
-            <element signature="e#59976#59996#0" expanded="false" />
-            <element signature="method#getChildHeight#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#calcItemHeight#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#calcItemHeight#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#requestLayout#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#adjustScroll#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#measureItem#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#measureFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#onMeasure#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#66958#67008#0" expanded="false" />
-            <element signature="method#onDragTouchEvent#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#startDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#startDrag#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#startDrag#1;class#DragSortListView#0" expanded="false" />
-            <element signature="method#startDrag#1;class#DragSortListView#0" expanded="false" />
-            <element signature="e#72114#72172#0" expanded="false" />
-            <element signature="method#doDragFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#doDragFloatView#1;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#updateFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#updateFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#74666#74684#0" expanded="false" />
-            <element signature="e#75141#75187#0" expanded="false" />
-            <element signature="e#75655#75711#0" expanded="false" />
-            <element signature="method#destroyFloatView#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#FloatViewManager#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#FloatViewManager#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#onCreateFloatView#0;class#FloatViewManager#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#onDragFloatView#0;class#FloatViewManager#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#onDestroyFloatView#0;class#FloatViewManager#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#DragListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#DropListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#DropListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#RemoveListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#RemoveListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#DragSortListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#setDragSortListener#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#moveCheckState#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#moveCheckState#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#83804#83870#0" expanded="false" />
-            <element signature="e#85837#85902#0" expanded="false" />
-            <element signature="docComment;method#removeCheckState#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#removeCheckState#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#87652#87712#0" expanded="false" />
-            <element signature="method#buildRunList#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#89018#89078#0" expanded="false" />
-            <element signature="e#89581#89644#0" expanded="false" />
-            <element signature="method#rotate#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#findFirstSetIndex#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#insertionIndexForKey#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;class#DragScrollProfile#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#DragScrollProfile#0;class#DragSortListView#0" expanded="false" />
-            <element signature="docComment;method#getSpeed#0;class#DragScrollProfile#0;class#DragSortListView#0" expanded="false" />
-            <element signature="class#DragScroller#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#DragScroller#0;class#DragScroller#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#startScrolling#0;class#DragScroller#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#stopScrolling#0;class#DragScroller#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#run#0;class#DragScroller#0;class#DragSortListView#0" expanded="false" />
-            <element signature="e#95292#95357#0" expanded="false" />
-            <element signature="class#DragSortTracker#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#DragSortTracker#0;class#DragSortTracker#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#startTracking#0;class#DragSortTracker#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#appendState#0;class#DragSortTracker#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#flush#0;class#DragSortTracker#0;class#DragSortListView#0" expanded="false" />
-            <element signature="method#stopTracking#0;class#DragSortTracker#0;class#DragSortListView#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1252,14 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20510396" vertical-offset="157598" max-vertical-offset="284835">
           <caret line="10879" column="59" selection-start-line="10879" selection-start-column="9" selection-end-line="10879" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/android/sources/android-19/android/database/Cursor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="428" max-vertical-offset="6855">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1267,7 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2693762" vertical-offset="0" max-vertical-offset="1058">
           <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1278,42 +1057,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/drag-sort-listview/library/src/com/mobeta/android/dslv/DragSortCursorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3642857" vertical-offset="15" max-vertical-offset="3510">
-          <caret line="18" column="85" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/contact_details_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-30.666666" vertical-offset="417" max-vertical-offset="1425">
           <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <caret line="30" column="116" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
-          <folding>
-            <element signature="e#1839#1878#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2556818" vertical-offset="0" max-vertical-offset="528">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1333,41 +1079,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
-          <caret line="53" column="118" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactDetailFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1867" max-vertical-offset="3510">
-          <caret line="60" column="15" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1522" max-vertical-offset="2580">
-          <caret line="155" column="56" selection-start-line="154" selection-start-column="24" selection-end-line="155" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5338#5339#0" expanded="true" />
-            <element signature="e#5378#5379#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17013232" vertical-offset="0" max-vertical-offset="1058">
           <caret line="12" column="61" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1375,34 +1090,268 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61011904" vertical-offset="0" max-vertical-offset="1395">
           <caret line="41" column="65" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
-          <folding>
-            <element signature="e#1184#1211#0" expanded="true" />
-            <element signature="e#1695#1720#0" expanded="true" />
-            <element signature="e#2062#2086#0" expanded="true" />
-            <element signature="e#2449#2469#0" expanded="true" />
-            <element signature="e#2747#2769#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="jar://$USER_HOME$/android/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/location/LocationListener.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09924386" vertical-offset="0" max-vertical-offset="1058">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android/sources/android-19/android/location/LocationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31852552" vertical-offset="5783" max-vertical-offset="24375">
+          <caret line="445" column="122" selection-start-line="445" selection-start-column="7" selection-end-line="445" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/drag-sort-listview/library/src/com/mobeta/android/dslv/DragSortCursorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26086956" vertical-offset="0" max-vertical-offset="3405">
+          <caret line="25" column="109" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/location/LocationClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15261044" vertical-offset="28" max-vertical-offset="1155">
+          <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android/sources/android-19/android/database/Cursor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3768116" vertical-offset="1245" max-vertical-offset="6855">
+          <caret line="127" column="12" selection-start-line="127" selection-start-column="12" selection-end-line="127" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36862004" vertical-offset="0" max-vertical-offset="1058">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+          <folding>
+            <element signature="e#1415#1433#0" expanded="true" />
+            <element signature="e#1881#1899#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/NewEditContactFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.7790697" vertical-offset="0" max-vertical-offset="4680">
-          <caret line="288" column="98" selection-start-line="288" selection-start-column="53" selection-end-line="288" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1714" max-vertical-offset="4215">
+          <caret line="158" column="154" selection-start-line="158" selection-start-column="154" selection-end-line="158" selection-end-column="154" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactDetailFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4403131" vertical-offset="0" max-vertical-offset="2925">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/list_header.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.031380754" vertical-offset="0" max-vertical-offset="478">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/contact_list_fragment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="615">
+          <caret line="27" column="4" selection-start-line="24" selection-start-column="8" selection-end-line="27" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/SeparatedListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="705" max-vertical-offset="1740">
+          <caret line="58" column="35" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
           <folding>
-            <element signature="e#2898#3138#0" expanded="true" />
-            <element signature="e#3127#3128#0" expanded="true" />
-            <element signature="e#12304#12333#0" expanded="true" />
-            <element signature="e#12374#12389#0" expanded="true" />
-            <element signature="e#12391#12881#0" expanded="true" />
-            <element signature="e#12858#12859#0" expanded="true" />
-            <element signature="e#12922#12937#0" expanded="true" />
-            <element signature="e#12939#13143#0" expanded="true" />
-            <element signature="e#13120#13121#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#506#522#0" expanded="true" />
+            <element signature="e#676#677#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+            <element signature="e#2560#2561#0" expanded="true" />
+            <element signature="e#2606#2607#0" expanded="true" />
+            <element signature="e#2679#2680#0" expanded="true" />
+            <element signature="e#3384#3385#0" expanded="true" />
+            <element signature="e#3415#3416#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ContactManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20289855" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android/sources/android-19/android/content/CursorLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="1325" max-vertical-offset="3120">
+          <caret line="133" column="11" selection-start-line="133" selection-start-column="11" selection-end-line="133" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28985506" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="21" column="65" selection-start-line="21" selection-start-column="61" selection-end-line="21" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.20289855" vertical-offset="690" max-vertical-offset="1725">
+          <caret line="36" column="68" selection-start-line="36" selection-start-column="68" selection-end-line="36" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android/sources/android-19/android/content/ContentResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="18395" max-vertical-offset="34080">
+          <caret line="1307" column="66" selection-start-line="1307" selection-start-column="66" selection-end-line="1307" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/android/extras/google/google_play_services/libproject/google-play-services_lib/libs/google-play-services.jar!/com/google/android/gms/location/Geofence.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16144814" vertical-offset="0" max-vertical-offset="1022">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/adapters/ContactsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1129" max-vertical-offset="2625">
+          <caret line="89" column="41" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/models/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2753623" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="20" column="73" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#2737#2738#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1335" max-vertical-offset="2370">
+          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/models/SimpleGeofence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="436" max-vertical-offset="1260">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/ContactsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="118" max-vertical-offset="1890">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3113#3122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/services/LocationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1770">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/services/ReceiveTransitionsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="763" max-vertical-offset="2115">
+          <caret line="65" column="68" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/provider/GeofenceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5596869" vertical-offset="298" max-vertical-offset="1320">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/android/sources/android-19/android/app/LoaderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33268103" vertical-offset="1490" max-vertical-offset="13050">
+          <caret line="144" column="34" selection-start-line="144" selection-start-column="34" selection-end-line="144" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/fragments/ContactListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2835">
+          <caret line="36" column="67" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/pcedrowski/ContactManager/ui/activities/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3816047" vertical-offset="0" max-vertical-offset="2835">
+          <caret line="45" column="52" selection-start-line="45" selection-start-column="50" selection-end-line="45" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,7 +1395,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 19 with GApis</last-edited>
+          <last-edited>1.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1470,7 +1419,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>Android API 19</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

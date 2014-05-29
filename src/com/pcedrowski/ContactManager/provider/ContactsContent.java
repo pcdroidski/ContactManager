@@ -25,8 +25,14 @@ public class ContactsContent {
         public static final String KEY_EMAIL = "email";
         public static final String KEY_ADDRESS = "address";
         public static final String KEY_PHOTO_URL = "photo_url";
+
+        // Geofencing data
         public static final String KEY_ADDRESS_LAT = "address_latitude";
         public static final String KEY_ADDRESS_LON = "address_longitude";
-
+        public static final String KEY_RADIUS = "geofence_radius";
+        public static final String KEY_EXPIRATION_DURATION = "geofence_expiration";
+        public static final String KEY_TRANSITION_TYPE = "geofence_transition_type";
+        public static final String KEY_ENABLED_GEOFENCE = "geofence_enabled";
+        public static final String KEY_ACTIVE_GEOFENCE = "geofence_active";
     }
 }

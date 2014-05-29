@@ -15,10 +15,14 @@ import com.mobeta.android.dslv.DragSortListView;
 import com.pcedrowski.ContactManager.R;
 import com.pcedrowski.ContactManager.provider.ContactsContent;
 import com.pcedrowski.ContactManager.ui.adapters.ContactsAdapter;
+import com.pcedrowski.ContactManager.ui.adapters.SeparatedListAdapter;
 
 public class ContactListFragment extends Fragment implements LoaderManager.LoaderCallbacks<Cursor> {
     private Context mContext;
+
+    private SeparatedListAdapter separatedListAdapter;
     private ContactsAdapter contactsAdapter;
+    private ContactsAdapter nearbyContactsAdapter;
     private DragSortListView dragSortListView;
 
     private ListContactListener listContactListener;
@@ -31,13 +35,19 @@ public class ContactListFragment extends Fragment implements LoaderManager.Loade
             ContactsContent.Contact.KEY_LAST_NAME,
             ContactsContent.Contact.KEY_EMAIL,
             ContactsContent.Contact.KEY_ADDRESS,
-            ContactsContent.Contact.KEY_PHOTO_URL
+            ContactsContent.Contact.KEY_PHOTO_URL,
+            ContactsContent.Contact.KEY_ACTIVE_GEOFENCE
     };
 
     final String SORT_ORDER_POSITIONS = ContactsContent.Contact.KEY_POSITION
             + " ASC";
     final String SORT_ORDER_A_Z = ContactsContent.Contact.KEY_LAST_NAME
             + " COLLATE NOCASE ASC";
+
+    final String GEO_ACTIVE = ContactsContent.Contact.KEY_ACTIVE_GEOFENCE
+            + "=1";
+    final String GEO_NOT_ACTIVE = ContactsContent.Contact.KEY_ACTIVE_GEOFENCE
+            + "=0";
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -48,8 +58,14 @@ public class ContactListFragment extends Fragment implements LoaderManager.Loade
         setHasOptionsMenu(true);
 
         getLoaderManager().initLoader(0, null, this);
+        getLoaderManager().initLoader(4, null, this);
 
+        separatedListAdapter = new SeparatedListAdapter(mContext);
         contactsAdapter = new ContactsAdapter(mContext, null);
+        nearbyContactsAdapter = new ContactsAdapter(mContext, null);
+
+        separatedListAdapter.addSection("Nearby Contacts", nearbyContactsAdapter);
+        separatedListAdapter.addSection("All Contacts", contactsAdapter);
     }
 
     @Override
@@ -57,6 +73,8 @@ public class ContactListFragment extends Fragment implements LoaderManager.Loade
         super.onResume();
 
         getLoaderManager().restartLoader(0, null, this);
+        getLoaderManager().restartLoader(4, null, this);
+
 
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(false);
         getActivity().getActionBar().setTitle("Contact List");
@@ -77,7 +95,7 @@ public class ContactListFragment extends Fragment implements LoaderManager.Loade
         View rootView = inflater.inflate(R.layout.contact_list_fragment, container, false);
 
         dragSortListView = (DragSortListView) rootView.findViewById(R.id.list_view);
-        dragSortListView.setAdapter(contactsAdapter);
+        dragSortListView.setAdapter(separatedListAdapter);
         View emptyTextView = rootView.findViewById(R.id.empty_text);
         dragSortListView.setEmptyView(emptyTextView);
         dragSortListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -128,11 +146,15 @@ public class ContactListFragment extends Fragment implements LoaderManager.Loade
         switch (id){
             case 0:
                 return new CursorLoader(getActivity(), ContactsContent.Contact.CONTENT_URI, PROJECTION,
-                        null, null, SORT_ORDER_POSITIONS);
+                        GEO_NOT_ACTIVE, null, SORT_ORDER_POSITIONS);
 
             case 1:
                 return new CursorLoader(getActivity(), ContactsContent.Contact.CONTENT_URI, PROJECTION,
-                        null, null, SORT_ORDER_A_Z);
+                        GEO_NOT_ACTIVE, null, SORT_ORDER_A_Z);
+
+            case 4:
+                return new CursorLoader(getActivity(), ContactsContent.Contact.CONTENT_URI, PROJECTION,
+                        GEO_ACTIVE, null, SORT_ORDER_A_Z);
 
             default:
                 return new CursorLoader(getActivity(), ContactsContent.Contact.CONTENT_URI, PROJECTION,
@@ -143,14 +165,29 @@ public class ContactListFragment extends Fragment implements LoaderManager.Loade
     @Override
     public void onLoadFinished(Loader<Cursor> loader, Cursor data) {
         if(!data.isClosed()) {
-            contactsAdapter.changeCursor(data);
+            switch (loader.getId()){
+                case 0:
+                case 1:
+                    contactsAdapter.changeCursor(data);
+                    break;
+                case 4:
+                    nearbyContactsAdapter.changeCursor(data);
+            }
+
         }
     }
 
 
     @Override
     public void onLoaderReset(Loader loader) {
-        contactsAdapter.changeCursor(null);
+        switch (loader.getId()) {
+            case 0:
+            case 1:
+                contactsAdapter.changeCursor(null);
+                break;
+            case 4:
+                nearbyContactsAdapter.changeCursor(null);
+        }
     }
 
     public interface ListContactListener {

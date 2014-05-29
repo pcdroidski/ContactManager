@@ -81,6 +81,7 @@ public class ContactsProvider extends ContentProvider{
             values.put(ContactsContent.Contact.KEY_EMAIL, "Unknown Email");
         }
 
+
         int position = getMaxColumnData();
         values.put(ContactsContent.Contact.KEY_POSITION, position);
 
@@ -135,6 +136,7 @@ public class ContactsProvider extends ContentProvider{
         getContext().getContentResolver().notifyChange(uri, null);
         return count;
     }
+
 
     static {
         uriMatcher = new UriMatcher(UriMatcher.NO_MATCH);

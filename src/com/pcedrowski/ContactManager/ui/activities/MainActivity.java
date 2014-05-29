@@ -3,11 +3,23 @@ package com.pcedrowski.ContactManager.ui.activities;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesClient;
+import com.google.android.gms.location.Geofence;
+import com.google.android.gms.location.LocationClient;
+import com.google.android.gms.location.LocationStatusCodes;
 import com.pcedrowski.ContactManager.R;
+import com.pcedrowski.ContactManager.provider.GeofenceManager;
+import com.pcedrowski.ContactManager.services.ReceiveTransitionsService;
 import com.pcedrowski.ContactManager.ui.fragments.ContactDetailFragment;
 import com.pcedrowski.ContactManager.ui.fragments.ContactListFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -36,12 +48,24 @@ import com.pcedrowski.ContactManager.ui.fragments.ContactListFragment;
  *
  */
 
-public class MainActivity extends Activity implements ContactListFragment.ListContactListener {
+public class MainActivity extends Activity implements ContactListFragment.ListContactListener,
+        GooglePlayServicesClient.ConnectionCallbacks, GooglePlayServicesClient.OnConnectionFailedListener,
+        LocationClient.OnAddGeofencesResultListener{
+
+    private LocationClient mLocationClient;
+    private List<Geofence> mEnabledGeofences;
+    public enum REQUEST_TYPE {ADD, REMOVE}
+    private REQUEST_TYPE mRequestType;
+    private boolean mInProgress;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        /** Play services APIs */
+        mLocationClient = new LocationClient(this, this, this);
+        mInProgress = false;
 
         if (savedInstanceState == null) {
             FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
@@ -49,6 +73,20 @@ public class MainActivity extends Activity implements ContactListFragment.ListCo
             fragmentTransaction.replace(R.id.container_master, fragment);
             fragmentTransaction.commit();
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        addGeofences();
+    }
+
+    @Override
+    public void onDestroy() {
+        mLocationClient.disconnect();
+        mInProgress = false;
+        super.onDestroy();
     }
 
     @Override
@@ -92,4 +130,75 @@ public class MainActivity extends Activity implements ContactListFragment.ListCo
             super.onBackPressed();
         }
     }
+
+    /** Google Play APIs */
+    private void addGeofences(){
+        mRequestType = REQUEST_TYPE.ADD;
+
+        // Fetch active Geofences from manager
+        mEnabledGeofences = GeofenceManager.getInstance().getEnabledGeofences();
+        if (mEnabledGeofences == null) {
+            mEnabledGeofences = new ArrayList<Geofence>();
+        }
+
+        if (!mInProgress && mEnabledGeofences.size() > 0) {
+            mInProgress = true;
+            mLocationClient.connect();
+        } else {
+            //TODO
+            Log.i("Geofencing", "Unable to connect to location client. Enabled geo: "
+                    + mEnabledGeofences.size());
+        }
+    }
+
+    @Override
+    public void onConnected(Bundle bundle) {
+        PendingIntent pendingIntent;
+        switch (mRequestType) {
+            case ADD:
+                pendingIntent = getTransitionPendingIntent();
+                mLocationClient.addGeofences(mEnabledGeofences, pendingIntent, this);
+                break;
+
+            case REMOVE:
+                //TODO
+                break;
+        }
+    }
+
+    @Override
+    public void onDisconnected() {
+        mLocationClient.disconnect();
+        mInProgress = false;
+    }
+
+    @Override
+    public void onConnectionFailed(ConnectionResult connectionResult) {
+        //TODO
+
+    }
+
+    @Override
+    public void onAddGeofencesResult(int statusCode, String[] strings) {
+        if (LocationStatusCodes.SUCCESS == statusCode) {
+            Log.i("Geofencing", "Successfully added geofence result.");
+
+        } else {
+            Log.i("Geofencing", "Failed to add geofence result.");
+            // If adding the geofences failed
+        }
+
+        mInProgress = false;
+        mLocationClient.disconnect();
+    }
+
+    private PendingIntent getTransitionPendingIntent() {
+        // Create an explicit Intent
+        Intent intent = new Intent(this,
+                ReceiveTransitionsService.class);
+
+        return PendingIntent.getService(this, 0,
+                intent, PendingIntent.FLAG_UPDATE_CURRENT);
+    }
+
 }
